@@ -13,7 +13,7 @@ function Login() {
     const userEmail = localStorage.getItem("email");
     if (userEmail) {
      
-      window.location.assign("https://main--rococo-biscuit-09af1e.netlify.app/page")
+      window.location.assign("hhttps://main--rococo-biscuit-09af1e.netlify.app/page")
 
     }
   }, [loggedInUser]);
