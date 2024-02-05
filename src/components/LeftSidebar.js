@@ -1,7 +1,5 @@
 import React from 'react';
 import { HiOutlineHome, HiOutlineUpload, HiOutlineDocumentText, HiOutlineCalendar, HiOutlineCog } from 'react-icons/hi';
-
-
 const LeftSidebar = () => {
     return (
         <div className="w-1/5 h-screen">

@@ -6,7 +6,7 @@ import profilepicture from '../images/Profile.png';
 const Navbar = () => {
     const logout = () => {
         localStorage.clear();
-        window.location.assign("http://localhost:3000/");
+        window.location.assign("https://main--rococo-biscuit-09af1e.netlify.app/");
     };
 
     return (
