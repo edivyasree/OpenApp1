@@ -1,6 +1,6 @@
 import React from 'react';
 import { HiOutlineHome, HiOutlineUpload, HiOutlineDocumentText, HiOutlineCalendar, HiOutlineCog } from 'react-icons/hi';
-import { Link } from 'react-router-dom';
+
 
 const LeftSidebar = () => {
     return (

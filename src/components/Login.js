@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { auth, provider } from "../Config";
 import { signInWithPopup, signInWithEmailAndPassword } from "firebase/auth";
-import Home from "./Home";
 import "../components/Login1.css"
 import Page from "./Page";
 
