@@ -1,0 +1,147 @@
+/* Container for the full layout */
+.layout {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  /* Container for the image, taking up 30% of the layout */
+  .image-side {
+    width: 61%;
+    background: url('leftsidebg.png') center / cover no-repeat;
+  }
+  
+  /* New class for the "BASE" text */
+.base-title {
+  font-size: 4rem; /* Adjust size as needed */
+  color: white; /* Make the text white */
+  position: absolute; /* Position it within .image-side */
+  bottom: 47%; /* Adjust based on design */
+  left: 10%; /* Adjust based on design */
+  font-weight: bold; /* Make it bold */
+}
+  /* Container for the form, taking up the remaining 70% of the layout */
+  .form-side {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem; /* Add padding as per your design */
+  }
+  
+  /* Form Card */
+  .card {
+    background-color: #ffffff; /* Assuming white background for card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-md equivalent */
+    border-radius: 0.5rem; /* Tailwind's rounded-md equivalent */
+    max-width: 400px; /* Max width of the form card */
+    margin: auto; /* Center the card in the available form-side space */
+    width: 100%;
+    padding: 2rem; /* Padding inside the card */
+  }
+  
+  /* Typography */
+  .text-heading {
+    font-size: 1.125rem; /* Tailwind's text-lg equivalent */
+    font-weight: 600; /* Tailwind's font-semibold equivalent */
+    color: #333333; /* Adjust the color code as per design */
+  }
+  
+  /* Input Fields */
+  .input-field {
+    padding: 0.75rem 1rem; /* Tailwind's py-3 px-4 equivalent */
+    border: 1px solid #E2E8F0; /* Tailwind's border-gray-300 equivalent */
+    border-radius: 0.375rem; /* Tailwind's rounded-md equivalent */
+    font-size: 1rem; /* Tailwind's text-base equivalent */
+    margin-bottom: 1rem; /* Space below each input field */
+    width: 100%; /* Full width of the parent container */
+  }
+  
+  .input-field:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-color: #4C6FFF; /* Replace with your focus color */
+    box-shadow: 0 0 0 3px rgba(76, 111, 255, 0.5); /* Replace rgba with your focus ring color */
+  }
+  
+  /* Buttons */
+  .button {
+    padding: 0.75rem 1rem; /* Tailwind's py-3 px-4 equivalent */
+    border-radius: 0.375rem; /* Tailwind's rounded-md equivalent */
+    font-weight: 600; /* Tailwind's font-semibold equivalent */
+    width: 100%; /* Full width buttons */
+    margin-bottom: 1rem; /* Space below each button */
+  }
+  
+  .button-primary {
+    background-color: #4C6FFF; /* Replace with the exact color from your design */
+    color: #ffffff;
+  }
+  
+  .button-primary:hover {
+    background-color: #3655B3; /* Darken on hover, replace with your color */
+  }
+  
+  /* Links */
+  .link {
+    color: #4C6FFF; /* Replace with the exact color from your design */
+    font-weight: 500; /* Tailwind's font-medium equivalent */
+    text-decoration: none; /* No underline by default */
+    display: block; /* Make the link a block to occupy its own line */
+    margin-top: 1rem; /* Space above the link */
+  }
+  
+  .link:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .button-google {
+    background-color: #EA4335; /* Google's brand color */
+    color: #ffffff;
+    padding: 0.75rem 1rem; /* Tailwind's py-3 px-4 equivalent */
+    font-weight: 600; /* Tailwind's font-semibold equivalent */
+    border-radius: 0.375rem; /* Tailwind's rounded-md equivalent */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .button-google:hover {
+    background-color: #D93025; /* A darker shade for the hover state */
+  }
+  
+  .button-google:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(234, 67, 53, 0.5); /* Focus ring color */
+  }
+  .labels-a {
+
+    margin-right: 0.5rem; 
+    display: block;
+    /* Spacing between label and input field */
+  }
+  
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem; /* Spacing between input groups */
+  }
+  .input-wrapper  {
+    min-width: 100px; /* Or whatever width you prefer */
+    text-align: right;
+  }
+  
+  /* You might want to adjust the width of the input field if the label is inline */
+  .input-field {
+    flex-grow: 1; /* Allows input field to take up the remaining space */
+    /* ... (rest of .input-field styles) ... */
+  }
+  
+  /* For the 'Forgot password?' to be aligned to the right */
+  .forgot-password {
+    text-align: left;
+    display: block; /* Makes it easier to apply text alignment */
+    color: #4C6FFF; /* Or whatever color you choose */
+    margin-top: 0.5rem; /* Space above the 'Forgot password?' link */
+  }
+  
